@@ -1,3 +1,4 @@
+
 import ModeToggle from "./mode-toggle";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -22,6 +23,7 @@ const Menu = () => {
         <nav className="md:hidden">
             <Sheet>
                 <SheetTrigger className="align-middle">
+
                     <EllipsisVertical />
                 </SheetTrigger>
                 <SheetContent className="flex flex-col items-start">
@@ -41,7 +43,7 @@ const Menu = () => {
                 </SheetContent>
             </Sheet>
         </nav>
+
     </div>);
 }
-
 export default Menu;
