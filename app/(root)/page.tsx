@@ -1,11 +1,14 @@
 
-import ProductList from '@/components/product/product-list';
+import ProductList from '@/components/ui/shared/product/product-list';
 import sampleData from '@/db/sample-data';
 
 const Homepage = () => {
-  console.log(sampleData);
   return <>
-    <ProductList data={sampleData}  title='Newest arrival' ></ProductList>
+    <ProductList
+      data={sampleData.products}
+      title='Newest arrival'
+      limit={4}
+      />
   </>;
 }
  
